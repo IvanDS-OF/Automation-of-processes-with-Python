@@ -2,6 +2,7 @@
 
 import requests
 from bs4 import BeautifulSoup
+from time import sleep
 
 #Define the URL 
 url = "https://www.google.com/finance/quote/USD-MXN?sa=X&ved=2ahUKEwiarpWnscCHAxVlJUQIHYMXGuEQmY0JegQIHBAw"
@@ -24,8 +25,6 @@ value = parsed_response.find(class_='YMlKec fxKbKc')
 
 #And print the information
 print(value.text)
-
-
 
 
 
