@@ -1,0 +1,28 @@
+#First we need to import the libraries needed
+
+import requests
+from bs4 import BeautifulSoup
+
+#Define the URL 
+url = "https://www.google.com/finance/quote/USD-MXN?sa=X&ved=2ahUKEwiarpWnscCHAxVlJUQIHYMXGuEQmY0JegQIHBAw"
+
+#Request to get the HTML code from the page
+response = requests.get(url, headers={'Accept': 'text/html'})
+#This ensures that the response nly contain the HTML code
+
+#Now, it is time to parse the code returned. - using bs4
+parsed_response = BeautifulSoup(response.text, 'html.parser')
+
+#Finally:  Print the info in fa ease format to read
+pretrify_response = parsed_response.prettify()
+print(pretrify_response)
+
+
+
+
+
+
+
+
+
+
