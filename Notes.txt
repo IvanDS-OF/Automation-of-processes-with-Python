@@ -1,2 +1,16 @@
 Here im going to write all my note about the solutions and steps required to obtain my results. 
 and duplicate them in case to be needed
+
+First at all, we need to set all the libraries needed to create succesfully all the solutions
+that are the next ones
+
+pyinputplus
+requests
+beautifulsoup4
+selenium
+webdriver-manager
+
+
+
+
+
