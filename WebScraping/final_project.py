@@ -10,7 +10,8 @@ def WebScraping():
 
     value = parsed_response.find(class_='YMlKec fxKbKc')
     print (value.text)
-    return str(value.text)
+    return str(value.text) # To work with a function, we need to treat this different
+
 
 
 
