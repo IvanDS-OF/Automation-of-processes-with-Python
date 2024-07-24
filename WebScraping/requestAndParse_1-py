@@ -14,15 +14,19 @@ response = requests.get(url, headers={'Accept': 'text/html'})
 parsed_response = BeautifulSoup(response.text, 'html.parser')
 
 #Finally:  Print the info in fa ease format to read
-pretrify_response = parsed_response.prettify()
-print(pretrify_response)
+#pretrify_response = parsed_response.prettify()
+#print(pretrify_response)
+
+
+#Now it is time to extract the specific information that i Need
+#To identify an specific element, we can use the FIND_ALL and the class
+value = parsed_response.find(class_='YMlKec fxKbKc')
+
+#And print the information
+print(value.text)
 
 
 
 
 
-
-
-
-
-
+#<div class="YMlKec fxKbKc">18.3578</div>
