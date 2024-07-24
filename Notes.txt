@@ -10,7 +10,9 @@ beautifulsoup4
 selenium
 webdriver-manager
 
-
+The "parsing" I can resume it like the process to have the data indexable. we can encounter many 
+information format, and it is our responsability to index correclty the information to obtain the
+data that we specifically need from the source, from all the information that they gave us
 
 
 
