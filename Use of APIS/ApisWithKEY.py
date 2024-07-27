@@ -13,7 +13,7 @@ url = 'https://openweathermap.org/forecast5#name5'
 
 #Use of the commands to use the API besithe its key
 parameters = {'q': 'Paris,FR',
-              'appid': 'b243bade4bbe1443aaa55ac385b0851d'}
+              'appid': '*'}
 
 response = requests.get(url, params=parameters)
 
